@@ -13,6 +13,7 @@
 		AAA93E5D1F769BEC00E51EE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA93E5B1F769BEC00E51EE1 /* Main.storyboard */; };
 		AAA93E681F769BEC00E51EE1 /* MyBluetoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA93E671F769BEC00E51EE1 /* MyBluetoothTests.swift */; };
 		AAA93E731F769BEC00E51EE1 /* MyBluetoothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA93E721F769BEC00E51EE1 /* MyBluetoothUITests.swift */; };
+		AAA93E821F76A1CF00E51EE1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AAA93E811F76A1CF00E51EE1 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		AAA93E6E1F769BEC00E51EE1 /* MyBluetoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBluetoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA93E721F769BEC00E51EE1 /* MyBluetoothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBluetoothUITests.swift; sourceTree = "<group>"; };
 		AAA93E741F769BEC00E51EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAA93E811F76A1CF00E51EE1 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		AAA93E491F769BEC00E51EE1 = {
 			isa = PBXGroup;
 			children = (
+				AAA93E811F76A1CF00E51EE1 /* .gitignore */,
 				AAA93E541F769BEC00E51EE1 /* MyBluetooth */,
 				AAA93E661F769BEC00E51EE1 /* MyBluetoothTests */,
 				AAA93E711F769BEC00E51EE1 /* MyBluetoothUITests */,
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAA93E5A1F769BEC00E51EE1 /* Assets.xcassets in Resources */,
+				AAA93E821F76A1CF00E51EE1 /* .gitignore in Resources */,
 				AAA93E5D1F769BEC00E51EE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
