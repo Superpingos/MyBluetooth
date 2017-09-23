@@ -2,8 +2,8 @@
 //  MyBluetoothTests.swift
 //  MyBluetoothTests
 //
-//  Created by Steve NICOUD on 23.09.17.
-//  Copyright © 2017 Superpingos. All rights reserved.
+//  Created by Superpingos on 23.09.17.
+//  Copyright © 2017. All rights reserved.
 //
 
 import XCTest

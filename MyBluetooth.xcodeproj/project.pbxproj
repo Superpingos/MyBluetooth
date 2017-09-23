@@ -129,6 +129,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAA93E771F769BEC00E51EE1 /* Build configuration list for PBXNativeTarget "MyBluetooth" */;
 			buildPhases = (
+				AAA93E801F769CFD00E51EE1 /* Increment build */,
 				AAA93E4E1F769BEC00E51EE1 /* Sources */,
 				AAA93E4F1F769BEC00E51EE1 /* Frameworks */,
 				AAA93E501F769BEC00E51EE1 /* Resources */,
@@ -252,6 +253,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AAA93E801F769CFD00E51EE1 /* Increment build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AAA93E4E1F769BEC00E51EE1 /* Sources */ = {
@@ -400,11 +418,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6P44KKY5UX;
 				INFOPLIST_FILE = MyBluetooth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ch.nicoud.mac.MyBluetooth;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.nicoud.mac.mybluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -414,11 +433,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6P44KKY5UX;
 				INFOPLIST_FILE = MyBluetooth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ch.nicoud.mac.MyBluetooth;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.nicoud.mac.mybluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
